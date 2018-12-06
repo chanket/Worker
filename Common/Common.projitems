@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e7a2ab96-2bdf-41dc-aed6-ba3ea535df6d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Client\Handlers\_HandlerBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Configs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\ClientDataBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\CameraHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\CommandHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\DownloadHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\FileSystemHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\HttpDownloadHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\ScreenshotHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\SessionCommandHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\TaskListHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\UploadHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\_HelperBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\_RemoteErrorException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Helpers\TransportHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\ServerBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\LockGuard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Binder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Camera\AnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Camera\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Command\KillFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Command\RedirectedErrorFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Command\RedirectedInputFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Command\RedirectedOutputFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Command\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Download\AnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Download\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\ErrorFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\CloseAnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\CloseFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\DataFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\FSAnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\FSRequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\OpenAnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\OpenFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\File\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\_FrameBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\HeartbeatFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Information\AnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Information\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Screenshot\AnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Screenshot\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\Session\CommandFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\TaskList\AnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\TaskList\KillAnswerFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\TaskList\KillFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\TaskList\RequestFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Frames\TaskList\TaskInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\IOBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\SpeedRecorder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Environment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\SemaphoreT.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\ClientBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Client\Handlers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Tools\" />
+    <Folder Include="$(MSBuildThisFileDirectory)IO\" />
+  </ItemGroup>
+</Project>
